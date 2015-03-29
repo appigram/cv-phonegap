@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+    <title>CV app</title> 
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <link rel="stylesheet" href="css/jquery.mobile-1.2.1.min.css" />
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.mobile-1.2.1.min.js"></script>
+    </head>
+    <body>
+<div data-role="page" data-control-title="About me" id="page1">
+    <div data-theme="a" data-role="header" data-position="fixed">
+        <h3 class="title">
+            About me
+        </h3>
+    </div>
+    <div data-role="content">
+        <div class="profileimg" id="profileimg1" style=" text-align:center" data-controltype="image">
+            <img style="width: 50%; height: 50%" src="img/cv400x400.png">
+        </div>
+        <div class="description" data-controltype="textblock">
+            <p>
+                Hi there,
+            </p>
+            <p>
+                I'm one of the Artzomi and my name is
+                <em>
+                    Eugene Sysmanov
+                </em>
+                and I live in Saransk, Russia.
+                <br>
+            </p>
+            <p>
+                I am a soon to be kickass DeveloperOwl, but at the moment I'm a StudentOwl
+                that sometimes struggles a bit but I'm learning a lot!
+            </p>
+            <p>
+                If you are interested in starting a software project and are looking for
+                a developer please contact me by mailing to
+                <br>
+            </p>
+            <p>
+                <a href="mailto:appigram@gmail.com">
+                    appigram@gmail.com
+                </a>
+                <br>
+            </p>
+            <p>
+                Check out the MyCoding page to learn about my coding skills!
+                <br>
+            </p>
+        </div>
+    </div>
+    <div data-role="footer" data-id="foo1" data-position="fixed">        
+    <div data-role="navbar" data-iconpos="top" data-theme="a">
+        <ul>
+            <li>
+                <a href="#page1" data-transition="fade" data-theme="" data-icon="home">
+                    About me
+                </a>
+            </li>
+            <li>
+                <a href="#page2" data-transition="fade" data-theme="" data-icon="star">
+                    MyCoding
+                </a>
+            </li>
+            <li>
+                <a href="#page3" data-transition="fade" data-theme="" data-icon="info">
+                    This app
+                </a>
+            </li>
+        </ul>
+    </div>
+</div><!-- /footer -->
+
+</div>
+<div data-role="page" data-control-title="Examples" id="page2">
+    <div data-theme="a" data-role="header" data-position="fixed">
+        <h3>
+            Coding
+        </h3>
+    </div>
+    <div data-role="content">
+        <div data-controltype="textblock">
+            <p>
+                I have been coding for about 8 years and during this time I have tested
+                a lot of different languages and techs. So here is a short list of some of the developer
+                skills I've picked up so far, roughly ordered in skill level
+                <br>
+                 <ul>
+                  <li>JavaScript</li>
+                  <li>html5</li>
+                  <li>PHP</li>
+                  <li>Node.js</li>
+                </ul> 
+            </p>
+        </div>
+            <div data-controltype="textblock">
+                    <h3 style="text-align: center;">
+            You can also have a look at all my projects on my GitHub repo
+        </h3>
+    </div>
+    <a href="https://github.com/appigram" data-controltype="image" target="_blank">
+        <div class="gitrepo" id="repo1" style=" text-align:center" data-controltype="image">
+            <img style="width: 64px; height: 64px" src="img/GitHub-Mark-64px.png">
+        </div>
+    </a>
+        <div data-controltype="textblock">
+                    <h3 style="text-align: center;">
+           (includes source code of this app)
+        </h3>
+    </div>
+    </div>
+        <div data-role="footer" data-id="foo1" data-position="fixed">        
+    <div data-role="navbar" data-iconpos="top" data-theme="a">
+        <ul>
+            <li>
+                <a href="#page1" data-transition="fade" data-theme="" data-icon="home">
+                    About me
+                </a>
+            </li>
+            <li>
+                <a href="#page2" data-transition="fade" data-theme="" data-icon="star">
+                    MyCoding
+                </a>
+            </li>
+            <li>
+                <a href="#page3" data-transition="fade" data-theme="" data-icon="info">
+                    This app
+                </a>
+            </li>
+        </ul>
+    </div>
+</div><!-- /footer -->
+
+</div>
+<div data-role="page" data-control-title="This app" id="page3">
+    <div data-theme="a" data-role="header" data-position="fixed">
+        <h3>
+            This app
+        </h3>
+    </div>
+    <div data-role="content">
+        <div data-controltype="textblock" >
+            <br>
+            <p>
+                This app was made using html5, js, css, jquery-mobile and packaged with
+                PhoneGap.
+                <a target="_blank" href="http://github.com" data-mce-href="http://github.com" target="_blank">
+                    GitHub
+                </a>
+                was used for source code management which is linked to
+                <a target="_blank" href="http://build.phonegap.com" data-mce-href="http://build.phonegap.com" target="_blank">
+                    PhoneGaps cloud app builder
+                </a>
+                <br>
+            </p>
+        </div>
+    </div>
+        <div data-role="footer" data-id="foo1" data-position="fixed">        
+    <div data-role="navbar" data-iconpos="top" data-theme="a">
+        <ul>
+            <li>
+                <a href="#page1" data-transition="fade" data-theme="" data-icon="home">
+                    About me
+                </a>
+            </li>
+            <li>
+                <a href="#page2" data-transition="fade" data-theme="" data-icon="star">
+                    MyCoding
+                </a>
+            </li>
+            <li>
+                <a href="#page3" data-transition="fade" data-theme="" data-icon="info">
+                    This app
+                </a>
+            </li>
+        </ul>
+    </div>
+</div><!-- /footer -->
+
+</div>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
